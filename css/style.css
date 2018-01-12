@@ -121,3 +121,10 @@
     border-color: transparent;
     color: #fff !important;
 }
+
+.zh-lang .en {
+  display: none;
+}
+.en-lang .zh {
+  display: none;
+}
