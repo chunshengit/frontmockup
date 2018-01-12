@@ -13,12 +13,24 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/smoothscrolling.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/languages.min.css">
 </head>
 
-
-
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- Language support -->
  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="btn-group dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    <span class="lang-sm lang-lbl" lang="en"></span> <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><span class="lang-sm lang-lbl" lang="en"></span></li>
+    <li><span class="lang-sm lang-lbl" lang="zh"></span></li>
+    <li><span class="lang-sm lang-lbl" lang="ja"></span></li>
+    <li><span class="lang-sm lang-lbl" lang="ko"></span></li>
+  </ul>
+</div>
+
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -120,8 +132,18 @@
   </a>
   <p>Powered by <a href="http://getbootstrap.com/" title="ChunShen">Bootstrap</a></p>
 </footer>
+<script>
+  $(".dropdown-menu li span").click(function(){
+    console.log($(this).attr("lang"));
+    $(this).parents(".btn-group").find('.btn').html($(this).parents("li").html() + ' <span class="caret"></span>');
+});
+</script>
 </body>
 </html>
+
+ 
+
 </body>
 </html>
+
  
