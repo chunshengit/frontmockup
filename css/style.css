@@ -122,9 +122,42 @@
     color: #fff !important;
 }
 
+.en-lang .zh {
+  display: none;
+}
+.en-lang .ja {
+  display: none;
+}
+.en-lang .ko {
+  display: none;
+}
+
 .zh-lang .en {
   display: none;
 }
-.en-lang .zh {
+.zh-lang .ja {
+  display: none;
+}
+.zh-lang .ko {
+  display: none;
+}
+
+.ja-lang .en {
+  display: none;
+}
+.ja-lang .zh {
+  display: none;
+}
+.ja-lang .ko {
+  display: none;
+}
+
+.ko-lang .en {
+  display: none;
+}
+.ko-lang .zh {
+  display: none;
+}
+.ko-lang .ja {
   display: none;
 }
